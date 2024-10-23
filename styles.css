@@ -1,0 +1,96 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container styling */
+.container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Original button styling */
+.button-64 {
+    align-items: center;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background 300ms;
+    margin: 10px; /* Added margin for spacing */
+}
+
+.button-64:active,
+.button-64:hover {
+    outline: 0;
+}
+
+/* Yellow background with blue gradient */
+.button-yellow-blue {
+    background-image: linear-gradient(144deg, #ffc107, #ffeb3b 50%, #007bff);
+}
+
+.button-yellow-blue span {
+    background-color: rgb(5, 6, 45);
+    padding: 16px 24px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+}
+
+.button-yellow-blue:hover span {
+    background: none;
+}
+
+/* Blue background with yellow gradient */
+.button-blue-yellow {
+    background-image: linear-gradient(144deg, #007bff, #5b9eff 50%, #ffc107);
+}
+
+.button-blue-yellow span {
+    background-color: rgb(5, 6, 45);
+    padding: 16px 24px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+}
+
+.button-blue-yellow:hover span {
+    background: none;
+}
+
+/* Responsive font size adjustment */
+@media (min-width: 768px) {
+    .button-64 {
+        font-size: 24px;
+        min-width: 196px;
+    }
+}

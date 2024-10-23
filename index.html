@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare Excel Files</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Compare Two Excel Files</h1>
+        <div class="button-container">
+            <button class="button-64 button-yellow-blue" role="button" onclick="document.getElementById('file1').click()">
+                <span class="text">File 1</span>
+            </button>
+            <button class="button-64 button-blue-yellow" role="button" onclick="document.getElementById('file2').click()">
+                <span class="text">File 2</span>
+            </button>
+        </div>
+        <!-- Hidden file inputs -->
+        <input type="file" id="file1" accept=".xlsx" style="display: none;" />
+        <input type="file" id="file2" accept=".xlsx" style="display: none;" />
+        <div class="button-container">
+            <button class="button-64 button-yellow-blue" role="button" onclick="compareFiles()">
+                <span class="text">Compare Files</span>
+            </button>
+        </div>
+        <div id="output" class="output-container"></div>
+    </div>
+    <script src="compare.js"></script>
+</body>
+</html>
