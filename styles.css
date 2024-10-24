@@ -1,4 +1,3 @@
-/* Basic styling */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f4f8;
@@ -9,18 +8,36 @@ body {
     margin: 0;
 }
 
-/* Container styling */
 .container {
     text-align: center;
     background-color: #ffffff;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    max-width: 600px;
+    max-width: 900px; 
     width: 100%;
+    margin: 0 auto;
+    max-height: 80vh;
+    overflow-y: auto; 
 }
 
-/* Original button styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.output-container {
+    margin-top: 20px;
+    overflow-x: auto;
+    max-width: 100%; 
+}
+
 .button-64 {
     align-items: center;
     border: 0;
@@ -43,7 +60,7 @@ body {
     white-space: nowrap;
     cursor: pointer;
     transition: background 300ms;
-    margin: 10px; /* Added margin for spacing */
+    margin: 10px;
 }
 
 .button-64:active,
@@ -51,7 +68,6 @@ body {
     outline: 0;
 }
 
-/* Yellow background with blue gradient */
 .button-yellow-blue {
     background-image: linear-gradient(144deg, #ffc107, #ffeb3b 50%, #007bff);
 }
@@ -69,7 +85,6 @@ body {
     background: none;
 }
 
-/* Blue background with yellow gradient */
 .button-blue-yellow {
     background-image: linear-gradient(144deg, #007bff, #5b9eff 50%, #ffc107);
 }
@@ -87,7 +102,15 @@ body {
     background: none;
 }
 
-/* Responsive font size adjustment */
+.button-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 10px; 
+    margin-top: 20px;
+}
+
+
 @media (min-width: 768px) {
     .button-64 {
         font-size: 24px;
